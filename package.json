@@ -1,0 +1,32 @@
+{
+  "name": "alien-counter",
+  "version": "0.0.1",
+  "description": "Count the number of scares playing Alien: Isolation and allow to show it on Stream afterwards.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Pryrios/alien-counter.git"
+  },
+  "keywords": [
+    "counter",
+    "alien",
+    "nodejs"
+  ],
+  "author": "Pryrios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pryrios/alien-counter/issues"
+  },
+  "homepage": "https://github.com/Pryrios/alien-counter#readme",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^10.0.0",
+    "koa": "^2.13.1",
+    "koa-ratelimit": "^5.0.0"
+  }
+}

@@ -1,0 +1,1 @@
+Small counter to use on stream.
