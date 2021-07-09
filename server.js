@@ -11,7 +11,7 @@ let counter = 0;
 
 router.get("/count/total", async (ctx, next) => {
   ctx.status = 200;
-  ctx.body = counter;
+  ctx.body = '<script>setTimeout(function(){location.reload()},1000);</script>' + counter;
 })
 
 router.post("/count", async (ctx, next)  => {
