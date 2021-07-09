@@ -11,13 +11,13 @@ let counter = 0;
 
 router.get("/count/total", async (ctx, next) => {
   ctx.status = 200;
-  ctx.body = { count: counter }
+  ctx.body = counter;
 })
 
 router.post("/count", async (ctx, next)  => {
   counter ++;
   ctx.status = 200;
-  ctx.body = counter
+  ctx.body = { count: counter }
 })
 
 app
