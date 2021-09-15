@@ -2,6 +2,7 @@ import Koa from 'koa'
 import Router from '@koa/router'
 import cors from '@koa/cors'
 import ratelimit from 'koa-ratelimit'
+import checkMoobotHeaders from './headers.js'
 
 const db = new Map();
 
@@ -36,6 +37,7 @@ app
     max: 100,
     disableHeader: false
   }))
+  .use(checkMoobotHeaders)
   .use(router.routes())
   .use(router.allowedMethods());
 
